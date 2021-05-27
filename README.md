@@ -12,4 +12,5 @@ Yjs Integration for Drupal.
 
 * [Yjs](https://github.com/yjs/yjs)
 * [Drupal project](https://www.drupal.org/project/yjs)
-* [Learn more about Yjs](https://www.tag1consulting.com/yjs-podcasts-blogs-conference-presentations-more)
+* [Tag1: Real-time collaboration and the future of web applications](https://www.tag1consulting.com/blog/real-time-collaboration-and-future-web-applications)
+* [Tag1: Learn more about Yjs](https://www.tag1consulting.com/yjs-podcasts-blogs-conference-presentations-more)
