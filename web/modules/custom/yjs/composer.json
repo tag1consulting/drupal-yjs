@@ -1,0 +1,21 @@
+{
+    "name": "drupal/yjs",
+    "description": "Integrates Yjs into Drupal editors",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core": "^8 | ^9"
+    }
+    "authors": [
+        {
+            "name": "Diego Escalante Urrelo",
+            "email": "diego@tag1.com"
+        }
+    ],
+    "homepage": "https://www.drupal.org/project/Yjs",
+    "support": {
+        "issues": "https://github.com/tag1consulting/drupal-yjs/issues",
+        "source": "https://github.com/tag1consulting/drupal-yjs"
+    },
+    "minimum-stability": "dev",
+}
