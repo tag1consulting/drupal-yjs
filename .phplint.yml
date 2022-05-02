@@ -1,0 +1,22 @@
+path: ./
+jobs: 10
+cache: false
+extensions:
+  - php
+  - inc
+  - module
+  - theme
+  - profile
+  - install
+  - test
+exclude:
+  - app
+  - web/app
+  - web/core
+  - web/libraries
+  - web/modules/contrib
+  - web/profiles/contrib
+  - web/sites/default/files
+  - web/sites/simpletest
+  - web/themes/contrib
+  - vendor
