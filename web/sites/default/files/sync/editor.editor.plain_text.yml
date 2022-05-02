@@ -1,0 +1,33 @@
+uuid: 0776a84a-a62e-46ed-a1fb-d697b1834080
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.plain_text
+  module:
+    - codemirror_editor
+format: plain_text
+editor: codemirror_editor
+settings:
+  toolbar: true
+  buttons:
+    - bold
+    - italic
+    - underline
+    - strike-through
+    - list-numbered
+    - list-bullet
+    - link
+    - horizontal-rule
+    - undo
+    - redo
+    - clear-formatting
+    - enlarge
+    - shrink
+  lineWrapping: true
+  lineNumbers: true
+  foldGutter: false
+  autoCloseTags: true
+  styleActiveLine: true
+  mode: text/html
+image_upload: {  }
