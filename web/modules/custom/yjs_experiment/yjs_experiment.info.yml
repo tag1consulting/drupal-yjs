@@ -1,0 +1,5 @@
+name: YJS Experiment
+description: An experimental YJS module
+package: yjs-experiment
+type: module
+core_version_requirement: ^9
