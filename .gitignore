@@ -1,0 +1,89 @@
+# Drupal scaffolding
+.editorconfig
+.gitattributes
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.gitignore
+web/.ht.router.php
+web/.htaccess
+web/INSTALL.txt
+web/LICENSE.txt
+web/README.md
+web/README.txt
+web/example.gitignore
+web/index.php
+web/modules/README.txt
+web/profiles/README.txt
+web/robots.txt
+web/sites/README.txt
+web/sites/default/default.services.yml
+web/sites/default/default.settings.php
+web/sites/default/services.yml
+web/sites/development.services.yml
+web/sites/example.settings.local.php
+web/sites/example.sites.php
+web/themes/README.txt
+web/web.config
+
+# Other Drupal files
+web/autoload.php
+web/composer.json
+web/composer.lock
+web/core/
+web/modules/contrib/
+web/profiles/contrib/
+web/themes/contrib/
+web/update.php
+
+# Composer
+vendor/
+
+# Local configuration
+.ddev/config.*.yaml
+.env
+web/sites/*/settings.local.php
+
+# User generated and temporary content
+web/sites/*/cache
+web/sites/*/files/*
+!web/sites/*/files/sync
+web/sites/*/private
+web/sites/*/public
+web/sites/*/tmp
+web/sites/*/translations
+
+# Testing
+.phplint-cache
+web/sites/simpletest
+
+# Backups, SQL dumps, logs
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.log
+*.rar
+*.sql
+*.sql
+*.sql.gz
+*.sqlite
+*.tar
+*.zip
+
+# Operating System metadata
+.DS_Store*
+.Spotlight-V100
+.Trashes
+._*
+Thumbs.db
+ehthumbs.db
+
+# Editors
+*.codekit*
+*.orig
+*.swo
+*.swp
+*~
+.idea
