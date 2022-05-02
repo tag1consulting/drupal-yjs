@@ -27,7 +27,12 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -85,5 +90,18 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "scripts-descriptions": {
+        "dev:configure": "Enables the default `sites` configuration",
+        "dev:install": "Installs the project locally for development"
+    },
+    "scripts": {
+        "dev:configure": "cp -v web/sites/default/template.settings.local.php web/sites/default/settings.local.php",
+        "dev:install": [
+            "@composer install",
+            "drush site:install --existing-config --sites-subdir=default --yes --verbose",
+            "drush cache:rebuild",
+            "drush user:login"
+        ]
     }
 }
