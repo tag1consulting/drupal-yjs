@@ -1,0 +1,11 @@
+uuid: 1390ad9f-66b1-49a1-ad27-b07a45c0e6d6
+langcode: en
+status: true
+dependencies: {  }
+name: Article
+type: article
+description: 'A simple article to test CodeMirror'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

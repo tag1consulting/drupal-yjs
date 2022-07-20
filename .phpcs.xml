@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PHP_CodeSniffer" xsi:noNamespaceSchemaLocation="phpcs.xsd">
+  <description>Tag1 coding standards.</description>
+
+  <!-- Files to analyze -->
+  <file>web/modules/custom</file>
+  <file>web/themes/custom</file>
+
+  <!-- Files to be excluded -->
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+  <exclude-pattern>web/themes/*.js</exclude-pattern>
+  <exclude-pattern>web/themes/*.css</exclude-pattern>
+
+  <!-- Use drupal/coder recommended extensions -->
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md,yml" />
+
+  <!-- Use colors -->
+  <arg name="colors"/>
+
+  <!-- Show sniff codes in all reports -->
+  <arg value="s"/>
+  <!-- Show progress of the run -->
+  <arg value="p"/>
+
+  <!--
+    Include Drupal rulesets.
+
+    Note that when using relative paths, the starting dir is:
+      `vendor/squizlabs/php_codesniffer/`
+
+    You can see the logic for standards paths in:
+      `src/Util/Standards.php:getInstalledStandardPaths():`
+      (...)
+      $installedPath = Common::realPath(__DIR__.$ds.'..'.$ds.'..'.$ds.$installedPath);
+
+    Which progressively translates to:
+      `vendor/squizlabs/php_codesniffer/src/Util/../../$installedPath`
+      `vendor/squizlabs/php_codesniffer/$installedPath`
+      `vendor/squizlabs/php_codesniffer/../../drupal/coder/coder_sniffer`
+      `vendor/drupal/coder/coder_sniffer`
+  -->
+  <config name="installed_paths" value="../../drupal/coder/coder_sniffer"/>
+
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+</ruleset>
